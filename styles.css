@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+
+body{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+
+
+@media screen and (min-width: 780px) {
+   
+    .main{
+  
+        display: flex;
+       min-height: 100vh;
+       background-image: url("images/bg-pattern-desktop.svg");
+        background-size: cover;
+    }
+.left{
+    
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    padding-left: 80px;
+    
+
+}
+.hero-m{
+    display: none;
+}
+.logo{
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+.right{
+    /* height: 100%;
+    width: 40%; */
+    background-image: url("images/hero-desktop.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 40%;
+}
+
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.wrap-h1{
+    font-weight: 300;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 0;
+}
+
+.wrap-h3  {
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: hsl(0, 6%, 24%);
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+}
+
+.wrap-p{
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+input{
+    background-color: transparent;
+    border:1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 15px 30px;
+    height: 20px;
+    min-width: 330px;
+    position: relative;
+    margin-top: 2rem;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+button{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 50px;
+    margin-top: 2rem;
+    padding: 15px;
+    position: absolute;
+    left: 500px;
+    z-index: 5;
+    height: 55px;
+    width: 100px;
+    cursor: pointer;
+}
+img {
+    transition: transform .5s ease-in-out;
+  }
+  button:hover>img {
+     
+    transform: rotate(90deg);
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  
+   
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .logo{
+        max-width: 120px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-m{
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wrap-h1{
+        font-size: 50px;
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+        text-transform: uppercase;
+        line-height: 55px;
+        margin-bottom: -3rem;
+        letter-spacing: 7px;
+    }
+    .wrap-h3{
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 0;
+        color: hsl(0, 6%, 24%);
+        text-transform: uppercase;
+        margin-bottom: -3rem;
+        font-weight: 400;
+    }
+
+    .wrap-p{
+        padding: 0 2rem;
+        margin-top: 4rem;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4rem;
+        color: hsl(0, 36%, 70%);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    input{
+        background-color: transparent;
+        border:1px solid hsl(0, 36%, 70%);
+        border-radius: 50px;
+        font-size: 1rem;
+        padding: 15px 30px;
+        height: 18px;
+       width: 100%;
+        position: relative;
+        margin-top: 1rem;
+        font-family: 'Josefin Sans',sans-serif;
+    }
+    button{
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        border-radius: 50px;
+        margin-top: 14px;
+        padding: 15px;
+        position: absolute;
+        left: 70%;
+        z-index: 5;
+        height: 55px;
+        width: 80px;
+        cursor: pointer;
+    }
+    img {
+        transition: transform .5s ease-in-out;
+      }
+      button:hover>img {
+         
+        transform: rotate(90deg);
+      }
+    
+    }
+
+
+  
